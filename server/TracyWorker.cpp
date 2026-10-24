@@ -296,7 +296,7 @@ Worker::Worker( const char* name, const char* program, const std::vector<ImportE
     , m_resolution( 0 )
     , m_captureName( name )
     , m_captureProgram( program )
-    , m_captureTime( 0 )
+    , m_captureTime( time( nullptr ) )
     , m_executableTime( 0 )
     , m_pid( 0 )
     , m_samplingPeriod( 0 )
